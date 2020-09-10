@@ -9,6 +9,17 @@
     * {
       font-family: "Roboto Condensed";
     }
+      body{
+        display: inline-flex; 
+        justify-content: center;
+        align-items: center; 
+        width: 100%; 
+        min-height: 100vh; 
+        background: #ffffff;
+      }
+      .loader-container{
+      width: 60%;
+      }
   header {
     border-radius: 100px;
     padding: 10px 50px;
@@ -26,6 +37,7 @@
     font-size: 1.5rem;
     text-align: center;
   }
+      
   main {
     width: 90%;
   }
@@ -34,8 +46,7 @@
     </style>
   </head>
   <body style="margin: 0; padding: 0">
-    <div class="loader-container" style=" display: inline-flex; justify-content: center;
-    align-items: center; width: 100%; min-height: 100vh; background: #ffffff;">
+    <div class="loader-container">
       <div style="width:500px !important; height:500px !important; margin-bottom: 10px;" class="lottie" data-loop="true" data-bm-path="erkin.json" data-bm-renderer="svg"></div>
     <header>
     Erkin Ovlyagulyyev

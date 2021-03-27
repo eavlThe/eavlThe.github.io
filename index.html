@@ -5,130 +5,155 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="Description" CONTENT="Hi, my name is Erkin, Flutter Developer and just a guy who's passionate about UI/UX">
+    <meta
+      name="Description"
+      content="Hi, my name is Erkin, Flutter Developer and just a guy who's passionate about UI/UX"
+    />
     <meta name="google" content="nositelinkssearchbox" />
     <title>Erkin Ovlyagulyyev - Flutter Developer</title>
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
 
     <style rel="stylesheet">
-    @font-face {
-  font-family: "CustomRoboto";
-  src: local("Roboto Condensed"), url("/fonts/RC/RobotoCondensed-Regular.ttf"),
-    url("/fonts/RC/RobotoCondensed-Bold.ttf"),
-    url("/fonts/RC/RobotoCondensed-BoldItalic.ttf"),
-    url("/fonts/RC/RobotoCondensed-Light.ttf"),
-    url("/fonts/RC/RobotoCondensed-LightItalic.ttf"),
-    url("/fonts/RC/RobotoCondensed-Italic.ttf");
-}
-* {
-  font-family: "CustomRoboto";
-  box-sizing: border-box;
-}
-html {
-  font-size: 16px;
-}
-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  min-height: 100vh;
-  background: #0B0F1D;
-}
-.loader-container {
-  width: 90%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-video {
-  width: 50%;
-  height: auto !important;
-  margin-bottom: 10px;
-  margin-right: 5%;
-}
-header {
-  color: #f9f9f9;
-  position: relative;
-  width: 80%;
-  font-weight: 600;
-  margin: 10px;
-  font-size: 3rem;
-}
-header > span {
-  color: #eafd41;
-}
-nav {
-  width: 90%;
-  margin: 15px 0;
-  color: #f9f9f9;
-  font-size: 1.5rem;
-  text-align: center;
-}
-header > a {
-  color: #00aaff;
-}
-header > main {
-  color: #f9f9f9;
-  margin-top: 15px;
-  font-weight: 500;
-  font-size: 1.5rem;
-  line-height: 1.3;
-}
+      @font-face {
+        font-family: "CustomRoboto";
+        src: local("Roboto Condensed"),
+          url("/fonts/RC/RobotoCondensed-Regular.ttf"),
+          url("/fonts/RC/RobotoCondensed-Bold.ttf"),
+          url("/fonts/RC/RobotoCondensed-BoldItalic.ttf"),
+          url("/fonts/RC/RobotoCondensed-Light.ttf"),
+          url("/fonts/RC/RobotoCondensed-LightItalic.ttf"),
+          url("/fonts/RC/RobotoCondensed-Italic.ttf");
+      }
+      * {
+        font-family: "CustomRoboto";
+        box-sizing: border-box;
+      }
+      html {
+        font-size: 16px;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        min-height: 100vh;
+        background: #0b0f1d;
+      }
+      .loader-container {
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+      video {
+        width: 50%;
+        height: auto !important;
+        margin-bottom: 10px;
+        margin-right: 5%;
+      }
+      header {
+        color: #f9f9f9;
+        position: relative;
+        height: 100vh;
+        width: 80%;
+        font-weight: 600;
+        margin: 10px;
+        font-size: 3rem;
 
-@media screen and (max-width: 1024px) {
-  html {
-    font-size: 14px;
-  }
-  .loader-container {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    overflow-y: hidden;
-    flex-direction: column-reverse;
-    justify-content: flex-end;
-    align-items: center;
-  }
-  video {
-    position: absolute;
-    bottom: -30vmax;
-    
-    width: 90vmax;
-    height: 90vmax;
-    object-fit: cover;
-    margin-right: 0;
-  }
-  header {
-    padding: 5%;
-    width: 100%;
-    height: 50vh;
-    font-size: 2rem;
-  }
-    }</style>
+        overflow: hidden;
+      }
+      header > span {
+        color: #eafd41;
+      }
+      nav {
+        width: 90%;
+        margin: 15px 0;
+        color: #f9f9f9;
+        font-size: 1.5rem;
+        text-align: center;
+      }
+      header > a {
+        color: #00aaff;
+      }
+      header > main {
+        color: #f9f9f9;
+        margin-top: 15px;
+        font-weight: 500;
+        font-size: 1.5rem;
+        line-height: 1.3;
+      }
+
+      @media screen and (max-width: 1024px) {
+        html {
+          font-size: 14px;
+        }
+        .loader-container {
+          position: relative;
+          width: 100%;
+          height: 100vh;
+          overflow: hidden;
+          flex-direction: column-reverse;
+          justify-content: flex-end;
+          align-items: center;
+        }
+        video {
+          position: absolute;
+          bottom: -30vmax;
+
+          width: 90vmax;
+          height: 90vmax;
+          object-fit: cover;
+          margin-right: 0;
+        }
+        header {
+          padding: 5%;
+          width: 100%;
+          height: 50vh;
+          font-size: 1rem;
+        }
+        header > main {
+          font-size: 0.8rem;
+        }
+      }
+    </style>
     <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-TF5S38B');</script>
-<!-- End Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-TF5S38B");
+    </script>
+    <!-- End Google Tag Manager -->
   </head>
   <body style="margin: 0; padding: 0">
     <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TF5S38B"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-TF5S38B"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <div class="loader-container">
-      <video src="video.webm" autoplay>
-        
-      </video>
+      <video src="video.webm" autoplay></video>
       <header>
         Hi, I am <span>Erkin Ovlyagulyyev,</span>
         <br />
         Flutter developer
-        <a rel="noreferrer" target="_blank" href="https://asmanoky.com">@asmanoky</a> based in
+        <a rel="noreferrer" target="_blank" href="https://asmanoky.com"
+          >@asmanoky</a
+        >
+        based in
         <a
           rel="noreferrer"
           target="_blank"
@@ -148,13 +173,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <script src="/main.c48f6146.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-136380610-2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-136380610-2"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag('config', 'UA-136380610-2');
-</script>
+      gtag("config", "UA-136380610-2");
+    </script>
   </body>
 </html>

@@ -15,17 +15,17 @@
 
     <style rel="stylesheet">
       @font-face {
-        font-family: "CustomRoboto";
+        font-family: "Roboto Condensed";
         src: local("Roboto Condensed"),
-          url("/fonts/RC/RobotoCondensed-Regular.ttf"),
-          url("/fonts/RC/RobotoCondensed-Bold.ttf"),
-          url("/fonts/RC/RobotoCondensed-BoldItalic.ttf"),
-          url("/fonts/RC/RobotoCondensed-Light.ttf"),
-          url("/fonts/RC/RobotoCondensed-LightItalic.ttf"),
-          url("/fonts/RC/RobotoCondensed-Italic.ttf");
+          url("./fonts/RC/RobotoCondensed-Regular.ttf"),
+          url("./fonts/RC/RobotoCondensed-Bold.ttf"),
+          url("./fonts/RC/RobotoCondensed-BoldItalic.ttf"),
+          url("./fonts/RC/RobotoCondensed-Light.ttf"),
+          url("./fonts/RC/RobotoCondensed-LightItalic.ttf"),
+          url("./fonts/RC/RobotoCondensed-Italic.ttf");
       }
       * {
-        font-family: "CustomRoboto";
+        font-family: "Roboto Condensed", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
         box-sizing: border-box;
       }
       html {
@@ -59,19 +59,21 @@
         margin-bottom: 10px;
         margin-right: 5%;
       }
-      header {
+      
+      main {
         color: #f9f9f9;
         position: relative;
         width: 50%;
         font-weight: 600;
         margin: 10px;
         font-size: 2rem;
-
         overflow: hidden;
       }
-      header > span {
+
+      main > span {
         color: #eafd41;
       }
+
       nav {
         width: 90%;
         margin: 15px 0;
@@ -79,15 +81,10 @@
         font-size: 1.5rem;
         text-align: center;
       }
-      header > a {
+
+      main > a {
         color: #00aaff;
-      }
-      header > main {
-        color: #f9f9f9;
-        margin-top: 15px;
-        font-weight: 500;
-        font-size: 1.5rem;
-        line-height: 1.3;
+        text-decoration: none;
       }
 
       @media screen and (max-width: 1024px) {
@@ -113,15 +110,39 @@
           object-fit: cover;
           margin-right: 0;
         }
-        header {
+        main {
           padding: 5%;
           width: 100%;
           height: 50vh;
           font-size: 1.6rem;
         }
-        header > main {
+        main > main {
           font-size: 1.4rem;
         }
+      }
+      section#social{
+        display: inline-flex;
+        margin-top: 40px;
+      }
+      section#social > a{
+        width: auto;
+        height: auto;
+        padding: 8px 16px;
+        background-color: white;
+        text-decoration: none;
+        border-radius: 30px;
+        font-size: 14pt;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: light;
+        margin-right: 8px;
+      }
+      section#social > a >img{
+        width: 25px;
+        height: 25px;
+        margin-right: 8px;
+        border-radius: 25px;
       }
     </style>
     <!-- Google Tag Manager -->
@@ -152,39 +173,38 @@
     <!-- End Google Tag Manager (noscript) -->
     <div class="loader-container">
       <video src="video.webm" autoplay loop></video>
-      <header>
+      <main>
         Hi, I am <span>Erkin Ovlyagulyyev,</span>
         <br />
-        Flutter developer
-        <a rel="noreferrer" target="_blank" href="https://asmanoky.com"
-          >@asmanoky</a
-        >
-        based in
+        a flutter developer
+        <a rel="noreferrer" target="_blank" href="https://alle.travel">@alle.travel</a>,
+        from
         <a
-          rel="noreferrer"
           target="_blank"
           href="https://www.google.com/maps/place/%D0%90%D1%88%D1%85%D0%B0%D0%B1%D0%B0%D0%B4,+%D0%A2%D1%83%D1%80%D0%BA%D0%BC%D0%B5%D0%BD%D0%B8%D1%81%D1%82%D0%B0%D0%BD/@37.956283,58.144254,11.2z/data=!4m5!3m4!1s0x3f6ffe1bab3684d9:0x3cde013f62d3ade9!8m2!3d37.9600766!4d58.3260629"
-          >Ashgabat</a
-        >. Also designing interfaces and experiences (or trying to).
-        <br />
-
-        <main>
-          That's it. That's the whole website. (No, actually, it's not, it's
-          just not ready yet. I'm not lazy or something, just need to do a bunch
-          of stuff, but frankly working on it). But... right now you can check
-          out my socials to reach out to me.
-        </main>
-        <p>   </p>
-        <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="erknvl" data-color="#FFDD00" data-emoji=""  data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>
-      </header>
+          >Ashgabat, Turkmenistan</a>.
+      </br>
+        <section id="social">
+          <a class="social" href="https://github.com/erknvl" target="_blank">
+            <img src="./assets/icons/github.png" alt="Github" srcset="">@erknvl
+          </a>
+          <a class="social" href="https://twitter.com/ovlyagulyyev" target="_blank">
+            <img src="./assets/icons/twitter.png" alt="Twitter" srcset="">@ovlyagulyyev
+          </a>
+          <a class="social" href="https://erknvl.t.me" target="_blank">
+            <img src="./assets/icons/telegram.png" alt="Telegram" srcset="">@erknvl
+          </a>
+          <a class="social" href="mailto://mail@erkin.me" target="_blank">
+            <img src="./assets/icons/mail.png" alt="mail" srcset="">mail@erkin.me
+          </a>
+        </section>
+        
+      </main>
+      
     </div>
+    
 
-    <script src="/main.c48f6146.js"></script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-136380610-2"
-    ></script>
+    
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {

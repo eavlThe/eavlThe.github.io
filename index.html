@@ -41,7 +41,7 @@
         min-height: 100vh;
         background: #0b0f1d;
       }
-      .loader-container {
+      .root-container {
         width: 100vw;
         height: 100vh;
         display: flex;
@@ -49,6 +49,7 @@
         flex-direction: row;
         justify-content: flex-start;
         align-items: center;
+        flex-wrap: wrap;
       }
       video {
         position: absolute;
@@ -91,9 +92,9 @@
         html {
           font-size: 14px;
         }
-        .loader-container {
+        .root-container {
           position: relative;
-          width: 100%;
+          width: 100vw;
           height: 100vh;
           padding-left: 0 !important;
           overflow: hidden;
@@ -123,6 +124,8 @@
       section#social{
         display: inline-flex;
         margin-top: 40px;
+        width: 100vw;
+        flex-wrap: wrap;
       }
       section#social > a{
         width: auto;
@@ -137,6 +140,7 @@
         align-items: center;
         font-weight: light;
         margin-right: 8px;
+        margin-bottom: 8px;
       }
       section#social > a >img{
         width: 25px;
@@ -171,8 +175,10 @@
       ></iframe
     ></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    <div class="loader-container">
-      <video src="video.webm" autoplay loop></video>
+    <div class="root-container">
+      <video autoplay loop muted>
+        <source src="video.webm">
+      </video>
       <main>
         Hi, I am <span>Erkin Ovlyagulyyev,</span>
         <br />

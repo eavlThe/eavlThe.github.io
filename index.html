@@ -39,9 +39,10 @@
       width: 100vw;
       height: 100vh;
       display: flex;
+      padding-left: 32px;
       flex-direction: column;
       justify-content: center;
-      align-items: center;
+      align-items: flex-start;
       flex-wrap: wrap;
     }
 
@@ -51,13 +52,13 @@
       width: 50%;
       font-weight: 600;
       margin: 10px;
-      text-align: center;
+      text-align: left;
       font-size: 2rem;
       overflow: hidden;
     }
 
     main>span {
-      color: #454545;
+      color: orange;
     }
 
     main>a {
@@ -83,7 +84,7 @@
       border-radius: 10px;
       font-size: 14pt;
       display: inline-flex;
-      justify-content: center;
+      justify-content: flex-start;
       vertical-align: middle;
       align-items: center;
       font-weight: light;
@@ -97,6 +98,35 @@
       margin-right: 4px;
       border-radius: 25px;
       position: relative;
+    }
+
+    main>a.social>span.icon {
+      font-family: 'VT323', monospace;
+      display: inline-flex;
+      justify-content: baseline;
+      font-size: 1.5rem;
+      padding-right: 8px;
+      align-items: baseline;
+      font-weight: light;
+    }
+
+    main>a.social {
+      font-family: 'VT323', monospace;
+      display: inline-flex;
+      justify-content: baseline;
+      font-size: 2rem;
+      align-items: baseline;
+      font-weight: light;
+    }
+
+    main>a.social>img {
+      width: 20px;
+      height: 20px;
+      margin-right: 8px;
+      border-radius: 25px;
+      position: relative;
+      top: 2px;
+
     }
 
     .bg {
@@ -118,14 +148,6 @@
         padding: 16px;
         width: 100vw;
         height: 100vh;
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-        flex-wrap: wrap;
-        overflow: hidden;
       }
 
       main {
@@ -175,30 +197,22 @@
   <!-- End Google Tag Manager (noscript) -->
   <div class="root-container">
     <main>
-      Greetings, this is the webpage of <span>Erkin Ovlyagulyyev,</span> a
+      Greetings, my name is <span>Erkin Ovlyagulyyev,</span> a
       dedicated
       Flutter
-      developer <a rel="noreferrer" target="_blank"
+      developer <a id="email" rel="noreferrer" target="_blank"
         href="https://www.sputnik8.com">@sputnik8com</a>, located in the vibrant
       city of <a target="_blank"
         href="https://goo.gl/maps/zqCxmK49XHVn1w716">Istanbul, Turkey</a>.
+      <br>
+      <br>
 
+      You can send me email to <a class="social" href="mailto:mail@erkin.me"
+        target="_blank"><span class="icon">📫 </span>
+        mail@erkin.me
+      </a> or <a class="social" href="https://t.me/erknvl" target="_blank"><span
+          class="icon">💬 </span> @erknvl</a> on Telegram.
     </main>
-    <section id="social">
-      <a class="social" href="https://github.com/erknvl" target="_blank">
-        <img src="./assets/icons/github.png" alt="Github" srcset=""> @erknvl
-      </a>
-      <a class="social" href="https://twitter.com/ovlyagulyyev" target="_blank">
-        <img src="./assets/icons/twitter.png" alt="Twitter" srcset="">
-        @ovlyagulyyev
-      </a>
-      <a class="social" href="https://erknvl.t.me" target="_blank">
-        <img src="./assets/icons/telegram.png" alt="Telegram" srcset=""> @erknvl
-      </a>
-      <a class="social" href="mailto:mail@erkin.me" target="_blank">
-        <img src="./assets/icons/mail.png" alt="mail" srcset=""> mail@erkin.me
-      </a>
-    </section>
   </div>
 
 

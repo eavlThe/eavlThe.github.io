@@ -30,7 +30,7 @@ body {
     color: #dadada;
     position: relative;
     width: 50%;
-    font-weight: 600;
+    font-weight: 400;
     margin: 10px;
     text-align: left;
     font-size: 2rem;
@@ -87,7 +87,25 @@ section#portfolio {
     width: 30vw;
     background-color: #40404040;
     border-radius: 18px;
-    section.top {
+    > .store-links {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding-right: 8px;
+      > a {
+        flex: 1;
+        text-decoration: none;
+
+        > img {
+          width: 100%;
+        }
+        > img.appstore {
+          scale: 0.875;
+        }
+      }
+    }
+    > section.top {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
@@ -117,29 +135,13 @@ section#portfolio {
           > h5 {
             font-size: 1rem;
             font-weight: 400;
+            color: #bababa;
             margin: 0;
           }
         }
       }
-      .store-links {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding-right: 8px;
-        > a {
-          text-decoration: none;
-          padding: 0;
-          > img {
-            width: 100px;
-          }
-          > img#appstore {
-            width: 100px;
-          }
-        }
-      }
     }
-    section.images {
+    > section.images {
       display: flex;
       width: 100%;
       flex-direction: row;
@@ -170,6 +172,7 @@ section#portfolio {
   .root-container {
     padding-left: 16px;
     padding-right: 16px;
+    margin: 0;
     width: 100vw;
 
     main {
@@ -183,7 +186,8 @@ section#portfolio {
   }
 
   section#portfolio {
-    padding: 8px;
+    padding: 16px;
+    flex-direction: column;
     article {
       width: 100%;
     }

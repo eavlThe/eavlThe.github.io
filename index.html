@@ -16,176 +16,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
     rel="stylesheet">
-  <style rel="stylesheet">
-    * {
-      font-family: 'VT323', monospace;
-      box-sizing: border-box;
-    }
-
-    html {
-      font-size: 16px;
-    }
-
-    body {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      overflow: hidden;
-      background-color: #fff;
-    }
-
-    .root-container {
-      width: 100vw;
-      height: 100vh;
-      display: flex;
-      padding-left: 32px;
-      flex-direction: column;
-      justify-content: center;
-      align-items: flex-start;
-      flex-wrap: wrap;
-    }
-
-    main {
-      color: #454545;
-      position: relative;
-      width: 50%;
-      font-weight: 600;
-      margin: 10px;
-      text-align: left;
-      font-size: 2rem;
-      overflow: hidden;
-    }
-
-    main>span {
-      color: #f1a61b;
-    }
-
-    main>a {
-      color: #00aaff;
-      text-decoration: none;
-    }
-
-    section#social {
-      display: inline-flex;
-      margin-top: 40px;
-      justify-self: center;
-      align-items: center;
-    }
-
-    section#social>a {
-      font-family: 'VT323', monospace;
-      font-weight: bold;
-      width: auto;
-      height: auto;
-      padding: 8px 16px;
-      background-color: #DDDDDD50;
-      text-decoration: none;
-      border-radius: 10px;
-      font-size: 14pt;
-      display: inline-flex;
-      justify-content: flex-start;
-      vertical-align: middle;
-      align-items: center;
-      font-weight: light;
-      margin-right: 8px;
-      margin-bottom: 8px;
-    }
-
-    section#social>a>img {
-      width: 25px;
-      height: 25px;
-      margin-right: 4px;
-      border-radius: 25px;
-      position: relative;
-    }
-
-    main>a.social>span.icon {
-      font-family: 'VT323', monospace;
-      display: inline-flex;
-      justify-content: baseline;
-      font-size: 1.5rem;
-      padding-right: 8px;
-      align-items: baseline;
-      font-weight: light;
-    }
-
-    main>a.social {
-      font-family: 'VT323', monospace;
-      display: inline-flex;
-      justify-content: baseline;
-      font-size: 2rem;
-      align-items: baseline;
-      font-weight: light;
-    }
-
-    main>a.social>img {
-      width: 20px;
-      height: 20px;
-      margin-right: 8px;
-      border-radius: 25px;
-      position: relative;
-      top: 2px;
-
-    }
-
-    .bg {
-      position: fixed;
-      opacity: 0.3;
-      background-image: url('assets/bg.png');
-      background-repeat: repeat;
-      background-size: 100px;
-      width: 100%;
-      height: 100%;
-    }
-
-    @media screen and (max-width: 1024px) {
-      html {
-        font-size: 14px;
-      }
-
-      .root-container {
-        padding: 16px;
-        width: 100vw;
-        height: 100vh;
-      }
-
-      main {
-        width: 80%;
-      }
-
-      section#social {
-        align-self: center;
-        position: relative;
-        display: inline-flex;
-        flex-flow: row;
-        margin-top: 40px;
-        text-align: center;
-        align-content: center;
-        flex-wrap: wrap;
-        justify-self: center;
-        align-items: center;
-      }
-
-      section#social>a {
-        text-align: center;
-      }
-    }
-  </style>
-  <!-- Google Tag Manager -->
-  <script>
-    (function (w, d, s, l, i) {
-      w[l] = w[l] || [];
-      w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-      var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s),
-        dl = l != "dataLayer" ? "&l=" + l : "";
-      j.async = true;
-      j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-      f.parentNode.insertBefore(j, f);
-    })(window, document, "script", "dataLayer", "GTM-TF5S38B");
-  </script>
-  <!-- End Google Tag Manager -->
+  <link rel="stylesheet" href="style/style.css">
 </head>
 
 <body style="margin: 0; padding: 0">
@@ -213,21 +44,119 @@
       </a> or say hi <a class="social" href="https://t.me/erknvl"
         target="_blank"><span class="icon">💬 </span> @erknvl</a> on Telegram.
     </main>
+
   </div>
 
+  <h1>Portfolio</h1>
+  <section id="portfolio">
+    <article>
 
+      <section class="top">
+        <div class="info">
+          <img src="assets/icons/kp.png" alt="" srcset="" class="app-logo-img">
+          <div class="spacer"></div>
+          <div class="title">
+            <h3>Kids Plaza Turkmenistan</h3>
+            <h5>Shopping</h5>
+          </div>
+        </div>
 
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
+        <div class="store-links">
+          <a
+            href='https://apps.apple.com/us/app/kids-plaza-turkmenistan/id6465289747'>
+            <img alt='Download on the App Store' id="appstore"
+              src='assets/icons/appstore.svg' />
+          </a>
+          <a
+            href='https://play.google.com/store/apps/details?id=com.kidsplazatm.app&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
+            <img alt='Get it on Google Play' src='assets/icons/play.png' />
+          </a>
+        </div>
+      </section>
 
-    gtag("config", "UA-136380610-2");
+      <section class="images">
+        <img src="assets/images/kp/1.png" alt="" srcset=""
+          class="app-screen-img">
 
-    document.getElementsByTagName('video')[0].onclick(this)
-  </script>
+        <img src="assets/images/kp/2.png" alt="" srcset=""
+          class="app-screen-img">
+
+        <img src="assets/images/kp/3.png" alt="" srcset=""
+          class="app-screen-img">
+      </section>
+    </article>
+    <article>
+      <section class="top">
+        <div class="info">
+          <img src="assets/images/brandym/logo.png" alt="" srcset=""
+            class="app-logo-img">
+          <div class="spacer"></div>
+          <div class="title">
+            <h3>Brandym Store</h3>
+            <h5>Shopping</h5>
+          </div>
+        </div>
+
+        <div class="store-links">
+          <a href='https://apps.apple.com/tr/app/brandym/id6450019101'>
+            <img alt='Download on the App Store' id="appstore"
+              src='assets/icons/appstore.svg' />
+          </a>
+          <a
+            href='https://play.google.com/store/apps/details?id=com.brandym.app&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
+            <img alt='Get it on Google Play' src='assets/icons/play.png' />
+          </a>
+        </div>
+      </section>
+
+      <section class="images">
+        <img src="assets/images/brandym/1.webp" alt="" srcset=""
+          class="app-screen-img">
+
+        <img src="assets/images/brandym/2.webp" alt="" srcset=""
+          class="app-screen-img">
+
+        <img src="assets/images/brandym/3.webp" alt="" srcset=""
+          class="app-screen-img">
+      </section>
+    </article>
+    <article>
+      <section class="top">
+        <div class="info">
+          <img src="assets/images/sputnik8/logo.png" alt="" srcset=""
+            class="app-logo-img">
+          <div class="spacer"></div>
+          <div class="title">
+            <h3>Sputnik8</h3>
+            <h5>Travel</h5>
+          </div>
+        </div>
+
+        <div class="store-links">
+          <a
+            href='https://apps.apple.com/us/app/sputnik8-%D1%8D%D0%BA%D1%81%D0%BA%D1%83%D1%80%D1%81%D0%B8%D0%B8-%D0%B8-%D0%B1%D0%B8%D0%BB%D0%B5%D1%82%D1%8B/id1546863088'>
+            <img alt='Download on the App Store' id="appstore"
+              src='assets/icons/appstore.svg' />
+          </a>
+          <a
+            href='https://play.google.com/store/apps/details?id=com.sputnik8.android&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
+            <img alt='Get it on Google Play' src='assets/icons/play.png' />
+          </a>
+        </div>
+      </section>
+
+      <section class="images">
+        <img src="assets/images/sputnik8/1.webp" alt="" srcset=""
+          class="app-screen-img">
+
+        <img src="assets/images/sputnik8/2.webp" alt="" srcset=""
+          class="app-screen-img">
+
+        <img src="assets/images/sputnik8/3.webp" alt="" srcset=""
+          class="app-screen-img">
+      </section>
+    </article>
+  </section>
 </body>
 
 </html>

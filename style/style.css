@@ -167,9 +167,9 @@ section#portfolio article section.images > img {
   }
 
   .root-container {
-    padding: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
     width: 100vw;
-    height: 100vh;
   }
   .root-container main {
     width: 80%;

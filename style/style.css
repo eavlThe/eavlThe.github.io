@@ -167,7 +167,7 @@ section#portfolio article section.images > img {
   }
 
   .root-container {
-    padding: 16px;
+    padding: 32px;
     width: 100vw;
     height: 100vh;
   }
@@ -176,7 +176,8 @@ section#portfolio article section.images > img {
   }
 
   h1 {
-    padding-left: 16px;
+    padding-bottom: 8px;
+    padding-left: 32px;
   }
 
   section#portfolio article {

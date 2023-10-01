@@ -183,10 +183,11 @@ section#portfolio {
   h1 {
     padding-bottom: 8px;
     padding-left: 16px;
+    margin-left: 16px;
   }
 
   section#portfolio {
-    padding: 16px;
+    padding: 8px 16px;
     flex-direction: column;
     article {
       width: 100%;

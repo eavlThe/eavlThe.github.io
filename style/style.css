@@ -84,20 +84,20 @@ section#portfolio article {
   align-items: flex-start;
   padding: 8px;
   margin: 8px;
-  width: 30vw;
+  width: 30%;
   background-color: #40404040;
   border-radius: 18px;
 }
 section#portfolio article > .store-links {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   padding-right: 8px;
 }
 section#portfolio article > .store-links > a {
-  flex: 1;
   text-decoration: none;
+  width: 35%;
 }
 section#portfolio article > .store-links > a > img {
   width: 100%;
@@ -187,8 +187,9 @@ section#portfolio article > section.images > img {
     padding: 8px 16px;
     flex-direction: column;
   }
-  section#portfolio article {
+  section#portfolio > article {
     width: 100%;
+    flex: 1;
   }
 }
 

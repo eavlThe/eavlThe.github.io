@@ -91,6 +91,9 @@ body article section#image-section img {
     margin-bottom: 20px;
     display: inline-flex;
   }
+  body > article section#description-section section.app-links > a {
+    margin-right: 4px;
+  }
   body > article section#description-section section.app-links > a > img {
     width: 150px;
   }

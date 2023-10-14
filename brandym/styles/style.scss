@@ -53,14 +53,22 @@ body {
       }
     }
   }
-  @media screen and (max-width: 1024px) {
-    .spacer {
-      display: none;
-    }
-    article {
+}
+@media screen and (max-width: 1024px) {
+  body {
+    overflow: hidden;
+    margin: 0 !important;
+    padding: 8px !important;
+    > article {
       height: 100vh;
       overflow: hidden;
       flex-direction: column;
+      .spacer {
+        display: none;
+      }
+      .spacer-small {
+        display: none;
+      }
       section#description-section {
         flex: 1;
         padding: 1rem;
@@ -87,6 +95,7 @@ body {
         }
       }
       section#image-section {
+        margin-top: 20px;
         overflow: hidden;
         img {
           width: 100%;

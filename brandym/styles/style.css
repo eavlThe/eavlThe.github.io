@@ -53,42 +53,52 @@ body article section#image-section {
 body article section#image-section img {
   width: 100%;
 }
+
 @media screen and (max-width: 1024px) {
-  body .spacer {
-    display: none;
+  body {
+    overflow: hidden;
+    margin: 0 !important;
+    padding: 8px !important;
   }
-  body article {
+  body > article {
     height: 100vh;
     overflow: hidden;
     flex-direction: column;
   }
-  body article section#description-section {
+  body > article .spacer {
+    display: none;
+  }
+  body > article .spacer-small {
+    display: none;
+  }
+  body > article section#description-section {
     flex: 1;
     padding: 1rem;
   }
-  body article section#description-section h1 {
+  body > article section#description-section h1 {
     font-size: 2rem;
     color: #545454;
     margin: 20px 0;
   }
-  body article section#description-section p {
+  body > article section#description-section p {
     font-size: 1rem;
     margin: 0;
     font-weight: 300;
     line-height: 1.25;
   }
-  body article section#description-section section.app-links {
+  body > article section#description-section section.app-links {
     margin-top: 30px;
     margin-bottom: 20px;
     display: inline-flex;
   }
-  body article section#description-section section.app-links > a > img {
+  body > article section#description-section section.app-links > a > img {
     width: 150px;
   }
-  body article section#image-section {
+  body > article section#image-section {
+    margin-top: 20px;
     overflow: hidden;
   }
-  body article section#image-section img {
+  body > article section#image-section img {
     width: 100%;
   }
 }

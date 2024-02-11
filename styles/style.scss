@@ -53,6 +53,7 @@ body {
     }
     h5 {
       font-size: 1.5rem !important;
+      line-height: 2 !important;
     }
      a{
       color: #30b7fa;
@@ -75,8 +76,8 @@ h1 {
   width: 100%;
   font-weight: 300;
   padding-bottom: 8px;
-  padding-left: 32px;
 }
+
 section#portfolio {
   display: flex;
   flex-direction: row;
@@ -180,10 +181,12 @@ section#portfolio {
   }
 
   .root-container {
-    margin: 0;
+    margin: 0px;
+    padding: 8px;
     width: 100%;
     main {
       margin: 0px;
+      padding: 0px;
       width: 100%;
     }
   }
